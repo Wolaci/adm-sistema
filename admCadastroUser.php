@@ -1,5 +1,7 @@
 <?php
 
+require __DIR__.'/vendor/autoload.php';
+
 use \App\Entity\User;
 
 $obUser = new User;
@@ -10,4 +12,5 @@ if(isset($_POST['name'], $_POST['email'])){
     exit;
 }
 
+include __DIR__.'/includes/formUser.php';
 ?>
