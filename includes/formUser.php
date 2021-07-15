@@ -9,7 +9,7 @@
 </head>
 <body>
   <h1>Usuários</h1>
-  <form>
+  <form method="post">
   <div class="form-row">
     <div class="form-group col-md-4">
       <label for="inputPassword4">Nome</label>
