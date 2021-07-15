@@ -25,20 +25,22 @@ class User{
       $this->data = date('Y-m-d H:i:s');
       $obDatabase = new Database('users');
       $this->id = $obDatabase->insert([
-                                          'titulo' => $this->titulo,
-                                          'descricao' => $this->descricao,
-                                          'ativo' => $this->ativo,
-                                          'data' => $this->data
+                                          'name' => $this->name,
+                                          'email' => $this->email,
+                                          'cpf' => $this->cpf,
+                                          'telefone' => $this->telefone,
+                                          'status' => $this->status
                                       ]);
       return true;                             
   }
 
   public function atualizar(){
       return (new Database('users'))->update('id='.$this->id,[
-                                                  'titulo' => $this->titulo,
-                                                  'descricao' => $this->descricao,
-                                                  'ativo' => $this->ativo,
-                                                  'data' => $this->data
+                                                'name' => $this->name,
+                                                'email' => $this->email,
+                                                'cpf' => $this->cpf,
+                                                'telefone' => $this->telefone,
+                                                'status' => $this->status
                                               ]);                  
   }
 
