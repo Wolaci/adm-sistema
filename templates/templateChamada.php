@@ -12,3 +12,5 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="assets/js/adminlte.min.js"></script>
+<!-- jQuery Mask-->
+<script src="assets/js/jquery.mask.min.js"></script>
