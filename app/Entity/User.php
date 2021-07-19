@@ -28,5 +28,9 @@ class User{
     return true;
   }
 
+  public static function getUsuarioPorEmail($email){
+    return (new Database('users'))->select('email = "'.$email.'"')->fetchObject(self::class);
+  }
+
 
 }
