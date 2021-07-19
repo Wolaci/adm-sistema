@@ -13,7 +13,7 @@ class User{
   public $phone;
   public $status;
 
-  public function cadastrar(){
+  public function register(){
     $database = new Database('users');
     
     $this->id = $database->insert([
@@ -28,7 +28,7 @@ class User{
     return true;
   }
 
-  public static function getUsuarioPorEmail($email){
+  public static function getUserEmail($email){
     return (new Database('users'))->select('email = "'.$email.'"')->fetchObject(self::class);
   }
 
