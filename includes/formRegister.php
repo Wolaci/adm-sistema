@@ -16,9 +16,9 @@
     <div class="card-body register-card-body">
       <p class="login-box-msg">Cadastrar um novo usuário</p>
 
-      <form action="../../index.html" method="post">
+      <form  method="post">
         <div class="input-group mb-3">
-          <input type="text" name="name" class="form-control" placeholder="Nome">
+          <input type="text" name="name" class="form-control" placeholder="Nome" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="email" name="email" class="form-control" placeholder="E-mail">
+          <input type="email" name="email" class="form-control" placeholder="E-mail" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF">
+          <input type="text" name="cpf" id="cpf" class="form-control" placeholder="CPF" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefone">
+          <input type="text" name="phone" id="phone" class="form-control" placeholder="Telefone" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-phone"></span>
@@ -50,25 +50,18 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" name="senha" class="form-control" placeholder="Senha">
+          <input type="password" name="password" class="form-control" placeholder="Senha" required>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
-        <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Confirmação de senha">
-          <div class="input-group-append">
-            <div class="input-group-text">
-              <span class="fas fa-lock"></span>
-            </div>
-          </div>
-        </div>
+
         <div class="row">
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+            <button type="submit" name="acao" class="btn btn-primary btn-block">Cadastrar</button>
           </div>
           <!-- /.col -->
         </div>

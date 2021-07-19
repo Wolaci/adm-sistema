@@ -16,12 +16,12 @@ class Login{
     return self::isLogged() ? $_SESSION['user'] : null;
   }
 
-  public static function login($obUsusario){
+  public static function login($user){
     self::init();
     $_SESSION['user'] = [
-      'id'=>$obUsusario->id,
-      'name'=>$obUsusario->name,
-      'email'=>$obUsusario->email
+      'id'=>$user->id,
+      'name'=>$user->name,
+      'email'=>$user->email
     ];
 
     header('location: index.php');
