@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Cadastro de Usuário</title>
+  <title>Adm Sistema | Cadastro de Usuário</title>
   <?php require_once('templates/templateChamada.php') ?>
 </head>
 <body class="hold-transition register-page">
