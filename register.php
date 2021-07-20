@@ -4,7 +4,7 @@ require __DIR__.'/vendor/autoload.php';
 use \App\Entity\User;
 use \App\Session\Login;
 
-//Login::requireLogout();
+Login::requireLogout();
 
 if(isset($_POST['acao'])){
   if(isset($_POST['name'], $_POST['email'], $_POST['password'],$_POST['cpf'],$_POST['phone'])){
