@@ -3,7 +3,7 @@
 use \App\Session\Login;
 $usuarioLogado = Login::getUserLogged();
 
-$usuario = $usuarioLogado ? $usuarioLogado['name'].' <a href="logout.php">Sair</a>' : '';
+$usuario = $usuarioLogado ? $usuarioLogado['name'].' <a class=" font-weight-bold ml-2" href="logout.php">Sair</a>' : '';
 
 $lista = "";
 foreach($users as $user => $rs)
