@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Entity;
+
 use \App\Db\Database;
+use \PDO;
 
 class User{
   
@@ -12,6 +14,11 @@ class User{
   public $cpf;
   public $phone;
   public $status;
+
+  public static function getUsers($where=null, $order=null, $limit = null){
+    return (new Database('users'))->select($where, $order, $limit)
+    ->fetchAll(PDO::FETCH_CLASS,self::class);
+  }
 
   public function register(){
     $database = new Database('users');
