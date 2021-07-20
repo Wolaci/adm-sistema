@@ -16,9 +16,9 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Faça login para iniciar sua sessão</p>
 
-      <form action="../../index3.html" method="post">
+      <form  method="post">
         <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="E-mail">
+          <input type="email" name="email" class="form-control" placeholder="E-mail">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -26,7 +26,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="Senha">
+          <input type="password" class="form-control" name="password" placeholder="Senha">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>
@@ -34,23 +34,19 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-              <input type="checkbox" id="remember">
-              <label for="remember">
-                Lembre de mim
-              </label>
-            </div>
-          </div>
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          <div class="col-12">
+            <button type="submit" name="acao" class="btn btn-primary btn-block">Entrar</button>
           </div>
           <!-- /.col -->
         </div>
       </form>
+      <p class="mb-0">
+        <a href="register.php" class="text-center">Registre um novo usuário</a>
+      </p>
     </div>
     <!-- /.login-card-body -->
+    
   </div>
 </div>
 <!-- /.login-box -->
